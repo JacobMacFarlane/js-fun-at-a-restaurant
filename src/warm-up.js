@@ -42,14 +42,23 @@ console.log(shouldOrderMore)
 // Express the following in code: If the variable "stockCount" is greater or equal to 1, log
 // the statement 'I'm going to eat some [food]!', otherwise, log the statement 
 // 'We need to get some more [food].'
-
+var inStock = 2;
+if (inStock >= 1) {
+console.log(`I'm going to eat some ${food}!`)
+} else {
+console.log(`we need to get some more ${food}.`)
+}
 
 
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite food is [food]!'. Otherwise, log the
 // statement 'I recently ate [food]'. In either case, the value stored in
 // the "food" variable should be included in the logged statement.
-
+if (shouldOrderMore === true) {
+    console.log(`My favorite food is ${food}!`)
+} else {
+    console.log(`I recently ate ${food}.`)
+}
 
 
 //------------------------- Arrays -------------------------//
@@ -57,18 +66,21 @@ console.log(shouldOrderMore)
 
 // Create a new variable "vegetables" and assign it to an Array of 5 different
 // vegetables, represented by their names as Strings.
-
+var vegetables = [
+    "Carrot", "Tomato", "Potato", "Cucumber", "Eggplant"
+]
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+console.log(vegetables[2])
 
 // Create a new variable "fruits" and assign it to an Array of 7
 // different fruits.
-
-
+var fruits = [
+    "Tomato", "Apple", "Peach", "Pear", "Kiwi", "Mango", "Bannana"
+]
 // Write the code to access the 5th element of the array, using bracket notation.
-
+console.log(fruits[4])
 
 //------------------------- Objects -------------------------//
 
