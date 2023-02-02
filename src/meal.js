@@ -1,28 +1,43 @@
 function nameMenuItem(Pizza) {
 return `Delicious ${Pizza}`
 }
-function createMenuItem() {
+function createMenuItem(menuItemName, price, type) {
 return menuItem = {
-name: "Delicious French Toast",
-price: 10.99,
-type: "breakfast"
+name: menuItemName,
+price: price,
+type: type
 }
 }
-function addIngredients(name) {
- var ingredients = [] + ingredients.push(name)
- return ingredients
+function addIngredients(addFood, ingredients) {
+  if (!ingredients.includes(addFood)) {
+  ingredients.push(addFood)
+  }
+  }
+
+function formatPrice(initialPrice) {
+  return "$" + initialPrice
 }
-  
-console.log(addIngredients('sausage'))
+
+function decreasePrice() {
+  return menuItem.price*.9
+}
+
+function createRecipe(title, ingredients, menuItemType) {
+  return recipe = {
+    title: title,
+    ingredients: ingredients,
+    type: menuItemType
+  }
+}
 
 
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
-  // formatPrice,
-  // decreasePrice,
-  // createRecipe
+   formatPrice,
+   decreasePrice,
+   createRecipe
 }
 
 
